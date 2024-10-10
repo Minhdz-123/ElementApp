@@ -141,21 +141,6 @@ public class ElementLookup {
         elements.add(new Element(89, "Actinium", "Ac", 227));
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("nhap STT (1-89): ");
-        int atomicNumber = scanner.nextInt();
-
-        if (atomicNumber < 1 || atomicNumber > 89) {
-            System.out.println("invalid, try again.");
-        } else {
-            Element element = elements.get(atomicNumber - 1); // Danh sách bắt đầu từ 0
-            element.displayInfo();
-        }
-
-        scanner.close();
-    }
-
     static void lookupElement(Scanner scanner) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
